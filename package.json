@@ -1,0 +1,37 @@
+{
+  "name": "note_zipper-mern-project",
+  "version": "1.0.0",
+  "engines": {
+    "node": "16.15.0"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon backend/server.js",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm start\" \"npm run client\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
+  },
+  "author": "Khushi",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "concurrently": "^7.2.1",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "express-async-handler": "^1.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.3.5",
+    "nodemon": "^2.0.16",
+    "redux-devtools-extension": "^2.13.9"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khushigit13/Notes-Zipper.git"
+  },
+  "bugs": {
+    "url": "https://github.com/khushigit13/Notes-Zipper/issues"
+  },
+  "homepage": "https://github.com/khushigit13/Notes-Zipper#readme",
+  "description": ""
+}
