@@ -13,6 +13,16 @@ const Footer = () => {
       <Container>
         <Row>
           <Col className="text-center py-3"> Copyright &copy;INoteZipper</Col>
+          <Col className="text-center py-3">
+            - made by{" "}
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://github.com/khushigit13"
+              style={{ textDecoration: "none" }}>
+              <b>Khushi Sahu 👩‍💻</b>
+            </a>
+          </Col>
         </Row>
       </Container>
     </footer>
